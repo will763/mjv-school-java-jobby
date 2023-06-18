@@ -1,3 +1,8 @@
+package dataRefine;
+
+import enumeration.DataFormato;
+import enumeration.Genero;
+
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

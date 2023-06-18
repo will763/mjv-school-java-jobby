@@ -1,3 +1,5 @@
+package model;
+
 public class Cadastro {
     private Pessoa pessoa = new Pessoa();
     private Endereco endereco = new Endereco();

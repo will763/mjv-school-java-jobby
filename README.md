@@ -3,7 +3,7 @@ Esse foi o case da segunda semana da mjv school de java, O escopo inicial do pro
 
 - Dados Pessoais: Nome, CPF, Data Nascimento, Sexo
 - Dados Endereço: Logradouro, Número, Complemento, Bairro, Cidade, Estado
-- Dados Contato: E-mail, Telefone, Celular, Se celular for WhatsApp
+- Dados model.Contato: E-mail, Telefone, Celular, Se celular for WhatsApp
 - Dados Profissionais: Profissão, Empresa, Salário, Emprego Atual
 - Habilidades: Uma lista de habilidades
 - Pretenção Salarial: Valor Mínimo, Valor Máximo

@@ -1,3 +1,5 @@
+package enumeration;
+
 public enum DataFormato {
     YYYY_MM_DD("yyyy-MM-dd"),
     DD_MMM_YYYY("dd-MM-yyyy");

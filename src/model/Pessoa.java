@@ -1,3 +1,7 @@
+package model;
+
+import enumeration.Genero;
+
 import java.time.LocalDate;
 
 public class Pessoa {

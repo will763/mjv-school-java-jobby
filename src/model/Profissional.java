@@ -1,3 +1,5 @@
+package model;
+
 public class Profissional {
     private String profissão;
     private String empresa;
