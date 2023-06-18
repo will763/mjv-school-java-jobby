@@ -1,6 +1,6 @@
 package util;
 
-import static dataRefine.TratamentoDado.*;
+import static data.TratamentoDado.*;
 import enumeration.DataFormato;
 import model.Cadastro;
 
