@@ -15,23 +15,30 @@ import java.util.List;
 public class ArquivoUtils {
     private final String PATH = "/home/will//Projects/mjv-school-java-jobby/jobby/files";
 
-    public void gravarArquivoCSV(List<Cadastro> cadastro) throws IOException {
+    public void gravarArquivoCSV(List<Cadastro> cadastro){
         Path arquivoDestino = Paths.get(PATH + "/cadastro.csv");
 
-        for (Cadastro c1: cadastro) {
-            byte[] conteudo = obterBytesCadastroCSV(c1);
-            Files.write(arquivoDestino, conteudo, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+        try {
+            for (Cadastro c1: cadastro) {
+                byte[] conteudo = obterBytesCadastroCSV(c1);
+                Files.write(arquivoDestino, conteudo, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            }
+        }catch (IOException ex){
+            throw new RuntimeException(ex.getMessage());
         }
     }
 
-    public void gravarArquivoTXT(List<Cadastro>  cadastro) throws IOException{
+    public void gravarArquivoTXT(List<Cadastro>  cadastro){
         Path arquivoDestino = Paths.get(PATH + "/cadastro-{CPF}.txt");
 
-        for (Cadastro c1: cadastro) {
-            byte[] conteudo = obterBytesCadastroTXT(c1);
-            Files.write(arquivoDestino, conteudo, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+        try {
+            for (Cadastro c1: cadastro) {
+                byte[] conteudo = obterBytesCadastroTXT(c1);
+                Files.write(arquivoDestino, conteudo, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            }
+        }catch (IOException ex){
+            throw new RuntimeException(ex.getMessage());
         }
-
     }
 
     private byte[] obterBytesCadastroCSV(Cadastro cadastro){
