@@ -20,7 +20,7 @@ public class Main {
 
         candidato1.getEndereco().setLogradouro("Avenida São Paulo");
         candidato1.getEndereco().setEstado("Paraíba");
-        candidato1.getEndereco().setCidade("Jão model.Pessoa");
+        candidato1.getEndereco().setCidade("João Pessoa");
         candidato1.getEndereco().setNumero("375");
         candidato1.getEndereco().setBairro("Estados");
         candidato1.getEndereco().setComplemento("até 1057/1058");
